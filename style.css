@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+body {
+  background-color: #e6eff6;
+}
+main {
+  height: 100vh;
+  font-family: "Lato", sans-serif;
+  padding: 30px;
+  display: grid;
+  gap: 25px;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-template-areas:
+    "colisée pantheon pise rialto"
+    "gladiateur couronne drapeau dôme";
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px 30px 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+.card:hover {
+  box-shadow: 0px 15px 20px #bfccde;
+}
+.colisée {
+  grid-area: colisée;
+}
+.pantheon {
+  grid-area: pantheon;
+}
+.pise {
+  grid-area: pise;
+}
+.rialto {
+  grid-area: rialto;
+}
+.gladiateur {
+  grid-area: gladiateur;
+}
+.couronne {
+  grid-area: couronne;
+}
+.drapeau {
+  grid-area: drapeau;
+}
+.dôme {
+  grid-area: dôme;
+}
+img {
+  width: 65px;
+  height: 65px;
+}
+main h2 {
+  padding: 15px;
+  font-weight: 700;
+  color: #717b87;
+}
+main p {
+  text-align: center;
+  font-weight: 300;
+  color: #717b87;
+}
+.line {
+  padding: 15px;
+  margin: 0 auto;
+  width: 80px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #717b87;
+  border-radius: 25px;
+  padding: 13px;
+}
+a:hover {
+  background-color: #4caaf2;
+  color: white;
+}
